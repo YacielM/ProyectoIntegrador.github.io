@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="vistas.css">
+    
 </head>
 <body>
     <header class="header">
@@ -19,18 +20,41 @@
             <li class="menu-item"><a href="reseñas.html">Reseñas</a></li>
         </ul>
 </header>
-    <header class="header">
-            <div class="logo">
-                <img src="Imagenes/logo.png" alt="Logo" class="logo">
-            </div>
-
-            <ul class="navbar">
-                <li class="menu-item"><a href="index.html">Inicio</a></li>
-                <li class="menu-item"><a href="servicios.html">Servicios</a></li>
-                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
-                <li class="menu-item"><a href="reseñas.html">Reseñas</a></li>
-            </ul>
-    </header>
-
+<div class="contCarrusel">
+    <!-- Cuadro 1 -->
+    <div class="carrusel">
+        <button class="prev" onclick="prevImage(0)">&#10094;</button>
+        <div class="carrusel-imagenes" id="carrusel-0">
+            <img src="Imagenes/posible principal o servicio 2.jpeg" alt="Servicio 1">
+            <img src="Imagenes/posible principal o servicio 6.jpeg" alt="Servicio 1">
+            <img src="Imagenes/principal terreno 2.jpeg" alt="Servicio 1">
+            <!-- Puedes agregar más imágenes aquí -->
+        </div>
+        <button class="next" onclick="nextImage(0)">&#10095;</button>
+    </div>
+    <!-- Cuadro 2 -->
+    <div class="carrusel">
+        <button class="prev" onclick="prevImage(1)">&#10094;</button>
+        <div class="carrusel-imagenes" id="carrusel-1">
+            <img src="Imagenes/futbol 2.jpeg" alt="Servicio 2">
+            <img src="Imagenes/futbol.jpeg" alt="Servicio 2">
+            <img src="Imagenes/posible principal o servicio 3.jpeg" alt="Servicio 2">
+            <!-- Puedes agregar más imágenes aquí -->
+        </div>
+        <button class="next" onclick="nextImage(1)">&#10095;</button>
+    </div>
+    <!-- Cuadro 3 -->
+    <div class="carrusel">
+        <button class="prev" onclick="prevImage(2)">&#10094;</button>
+        <div class="carrusel-imagenes" id="carrusel-2">
+            <img src="Imagenes/posible principal o servicio 5.jpeg" alt="Servicio 3">
+            <img src="Imagenes/posible principal o servicio 4 .jpeg" alt="Servicio 3">
+            <img src="Imagenes/posible principal o servicio.jpeg" alt="Servicio 3">
+            <!-- Puedes agregar más imágenes aquí -->
+        </div>
+        <button class="next" onclick="nextImage(2)">&#10095;</button>
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
