@@ -199,4 +199,10 @@ li {
     top: 60%;
     left: 35%;
   }
+  .sobrenosotros .encabezado {
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2.8rem;
+  }
 /*Fin Sobre Nosotros */
