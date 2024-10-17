@@ -1,30 +1,202 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    padding: 10px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+  }
+li {
     list-style: none;
-}
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-}
-.logo {
-    width: 80px;
-    height: auto;
+  }
+  
+  :root {
+    --main-color: #00f521;
+    --black: #13131a;
+    --bg: #010103;
+    --white: #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--bg);
+    overflow-x: hidden;
+  }
+  section {
+    padding: 2rem 7%;
+  }
+  
+  /*Encabezado*/
+  header {
+    /* background: transparent;*/
+    background: black;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-    background-color: #333;
-    padding: 10px 20px;
+    padding: 1.2rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .header .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .header .navbar .menu-item a {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    position: relative;
+    padding: 1.1rem 0;
+  }
+  .header .navbar .menu-item a:hover {
+    color: var(--main-color);
+  }
+  /*Fin Encabezado*/
+
+/*Inicio*/
+
+  .inicio{
+    min-height: 100vh;
+    background: url(Imagenes/principal\ terreno\ 2.jpeg);
+    /*background: url(Imagenes/principal-IUq6ChuGD-transformed.jpeg);  */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .inicio .contenido{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 13px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    
+  }
+  .inicio .contenido h3{
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    color: var(--white);
+  }
+  .inicio .contenido p{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.9;
+    padding: 1rem 0;
+    color: rgb(230, 240, 214);
+  }
+
+/*Fin Inicio*/
+
+/*Sobre Nosotros */
+  .sobrenosotros{
+    overflow: hidden;
+    margin: 8rem 0;
+  }
+  .sobrenosotros .fila{
+    margin-top: 4rem;
+    align-items: start;
+    gap: 35px;
+    display: flex;
+  }
+  .sobrenosotros .AutoCarrusel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    aspect-ratio: 1 / 1; /* Mantiene una proporción de 1:1 para que sean cuadradas */
+    overflow: hidden;
+  }
+  .sobrenosotros .AutoCarrusel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Añadimos la transición */
 }
+.sobrenosotros .AutoCarrusel img.active {
+  opacity: 1; /* Solo la imagen activa será visible */
+}
+.sobrenosotros .AutoCarrusel img:first-child {
+    display: block;
+}
+  .sobrenosotros .fila .contenido {
+    align-items: center;
+    padding: 0.3rem 0;
+  }
+  .sobrenosotros .fila .contenido h3 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    color: var(--white);
+  }
+  .sobrenosotros .fila .contenido p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+  }
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--white);
+    background: var(--bg);
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .btn:hover::before {
+    width: 100%;
+  }
+  .btn:hover {
+    color: var(--bg);
+    border: none;
+    
+  }
+  .sobrenosotros-btn {
+    border: 2px solid #fdfdfd;
+    top: 60%;
+    left: 35%;
+  }
+/*Fin Sobre Nosotros */
