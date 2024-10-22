@@ -277,6 +277,20 @@ button:hover {
 .service-one:hover .over-txt {
   left: 5%; /* El texto se desplaza dentro de la imagen cuando pasa el cursor */
 }
+.service-one:hover .carrusel-imagenes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+  
+  z-index: 2; /* Fondo oscuro detrás del texto */
+  pointer-events: none; /* Para que el fondo no interfiera con el contenido */
+}
+
+
 
 .service-one:hover .carrusel-imagenes::before {
   content: "";
