@@ -212,7 +212,7 @@ li {
   }
 /*Fin Sobre Nosotros */
 /*SERVICIOS*/
-/*SERVICIOS*/
+
 .contCarrusel {
   display: flex;
   justify-content: space-around;
@@ -224,11 +224,13 @@ li {
   width: 400px;
   height: 400px; /* Cambiado para hacerlo cuadrado */
   overflow: hidden;
+  margin-bottom: 200px; /* Ajusta este valor según el espacio que desees */
 }
 
 .carrusel-imagenes {
   display: flex; /* Para que las imágenes estén en fila */
   transition: transform 0.5s ease; /* Transición suave al cambiar de imagen */
+  
 }
 
 .carrusel-imagenes img {
@@ -313,13 +315,18 @@ button:hover {
 button:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Cambia el color del botón al pasar el cursor */
 }
-
+.Descripcion .titulo1 {
+  text-align: center;
+  margin-bottom: 100px
+}
 .Descripcion h1 {
   font-size: 2rem;
   text-align: left;
   line-height: 3rem;
   color: var(--white);
   text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 2px -1px 0 #000000, -1px 2px 0 #000000;
+  margin-bottom: 50px
+
 }
 .Descripcion p {
   font-size: 1.2rem;
@@ -328,3 +335,27 @@ button:hover {
   text-align: left;
   color: #fff;
   text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  margin-bottom: 50px
+  
+}
+/*PIE DE PAGINA*/
+
+footer {
+  background-color: #333; /* Color de fondo oscuro */
+  color: #fff;            /* Texto en blanco */
+  padding: 20px;          /* Espaciado interno */
+  text-align: center;     /* Centrar texto */
+  position: relative;     /* Para garantizar que el pie de página esté al final */
+  bottom: 0;
+  width: 100%;            /* Ocupar todo el ancho */
+}
+
+.footer-content a {
+  color: #00aced;         /* Color de los enlaces */
+  text-decoration: none;  /* Sin subrayado */
+  margin: 0 10px;         /* Espacio entre los enlaces */
+}
+
+.footer-content a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
