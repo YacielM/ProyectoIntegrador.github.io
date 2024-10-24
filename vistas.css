@@ -74,15 +74,16 @@ li {
 
 /*Inicio*/
 
-  .inicio{
+  .inicio {
     min-height: 100vh;
-    background: url(Imagenes/PortadaFondoInicio.jpeg);
-    /*background: url(Imagenes/principal-IUq6ChuGD-transformed.jpeg);  */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/PortadaFondoInicio.jpeg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     position: relative;
-  }
+}
+
+  
   .inicio .contenido{
     max-width: 30rem;
     display: flex;
@@ -343,7 +344,7 @@ button:hover {
   line-height: 3rem;
   color: var(--white);
   text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 2px -1px 0 #000000, -1px 2px 0 #000000;
-  margin-bottom: 50px
+  margin-bottom: 20px
 
 }
 .Descripcion p {
@@ -353,7 +354,7 @@ button:hover {
   text-align: left;
   color: #fff;
   text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-  margin-bottom: 50px
+  margin-bottom: 60px
   
 }
 /*PIE DE PAGINA*/
