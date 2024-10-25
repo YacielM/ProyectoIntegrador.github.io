@@ -165,3 +165,22 @@ select option {
     background-color: #000000;
     color: #ffffff;
 }
+textarea {
+    
+   
+    width: 100%;    /* Ocupa todo el ancho disponible */
+        height: 150px;  /* Ajusta la altura */
+        padding: 10px;  /* Espacio interior para el texto */
+        border: 2px solid var(--main-color); /* Borde verde brillante */
+        background-color: #000000; /* Fondo negro */
+        color: #ffffff; /* Texto blanco */
+        border-radius: 10px; /* Bordes suavemente redondeados */
+        box-sizing: border-box; /* Para que padding no afecte el tamaño del contenedor */
+        resize: none;   /* Evita que el usuario cambie el tamaño manualmente */
+        font-size: 16px; /* Tamaño del texto cómodo */
+    }
+    
+    textarea:focus {
+        border-color: var(--main-color);
+        outline: none;
+    }

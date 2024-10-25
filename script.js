@@ -14,7 +14,7 @@ setInterval(changeImage, 3000);
 
 // PAGINA Y FUNCION DE SERVICIOS
 let currentIndex = [0, 0, 0]; // Un array para guardar el índice actual de cada carrusel
-const carruselWidth = 400; // Ancho del carrusel (debe coincidir con el CSS)
+const carruselWidth = 400;    // Ancho del carrusel (debe coincidir con el CSS)
 
 function nextImage(carruselId) {
     const carrusel = document.getElementById(`carrusel-${carruselId}`);
