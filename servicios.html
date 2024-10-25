@@ -21,60 +21,45 @@
         </ul>
 </header>
 <div class="contCarrusel">
-    <!-- Cuadro 1 -->
+    <!-- Carrusel 1 -->
     <div class="carrusel service-one">
-        <button class="prev" onclick="prevImage(0)">&#10094;</button>
-        <div class="carrusel-imagenes" id="carrusel-0">
-            <img src="Imagenes/posible principal o servicio 2.jpeg" alt="Servicio 1">
-            <img src="Imagenes/posible principal o servicio 6.jpeg" alt="Servicio 1">
-            <img src="Imagenes/principal terreno 2.jpeg" alt="Servicio 1">
-            <img src="Imagenes/posible principal o servicio 3.jpeg" alt="Servicio 1">
-            <img src="Imagenes/posible principal o servicio 5.jpeg" alt="Servicio 1">
+        <button class="prev" onclick="previousImage(0)">&#10094;</button>
+        <div class="carrusel-imagenes">
+            <img id="carousel0Image" alt="Servicio 1">
         </div>
         <button class="next" onclick="nextImage(0)">&#10095;</button>
-
-        <!-- Texto superpuesto -->
         <div class="over-txt">
             <span>Servicio 1</span>
             <h4>EVENTOS, REUNIONES, CENAS DE FIN DE AÑO</h4>
-            <a href="#eventos">Leer más</a> <!-- Botón de redirección -->
-            
+            <a href="#eventos">Leer más</a>
         </div>
     </div>
 
-    <!-- Cuadro 2 -->
+    <!-- Carrusel 2 -->
     <div class="carrusel service-one">
-        <button class="prev" onclick="prevImage(1)">&#10094;</button>
-        <div class="carrusel-imagenes" id="carrusel-1">
-            <img src="Imagenes/futbol 2.jpeg" alt="Servicio 2">
-            <img src="Imagenes/futbol.jpeg" alt="Servicio 2">
-            <img src="Imagenes/posible principal o servicio 3.jpeg" alt="Servicio 2">
+        <button class="prev" onclick="previousImage(1)">&#10094;</button>
+        <div class="carrusel-imagenes">
+            <img id="carousel1Image" alt="Servicio 2">
         </div>
         <button class="next" onclick="nextImage(1)">&#10095;</button>
-
-        <!-- Texto superpuesto -->
         <div class="over-txt">
             <span>Servicio 2</span>
             <h4>CUMPLEAÑOS INFANTILES</h4>
-            <a href="#cumpleaños">Leer más</a> <!-- Botón de redirección -->
+            <a href="#cumpleaños">Leer más</a>
         </div>
     </div>
 
-    <!-- Cuadro 3 -->
+    <!-- Carrusel 3 -->
     <div class="carrusel service-one">
-        <button class="prev" onclick="prevImage(2)">&#10094;</button>
-        <div class="carrusel-imagenes" id="carrusel-2">
-            <img src="Imagenes/posible principal o servicio 5.jpeg" alt="Servicio 3">
-            <img src="Imagenes/posible principal o servicio 4 .jpeg" alt="Servicio 3">
-            <img src="Imagenes/posible principal o servicio.jpeg" alt="Servicio 3">
+        <button class="prev" onclick="previousImage(2)">&#10094;</button>
+        <div class="carrusel-imagenes">
+            <img id="carousel2Image" alt="Servicio 3">
         </div>
         <button class="next" onclick="nextImage(2)">&#10095;</button>
-
-        <!-- Texto superpuesto -->
         <div class="over-txt">
             <span>Servicio 3</span>
             <h4>ALQUILER DE CANCHAS DE PADEL, DE LUNES A DOMINGO</h4>
-            <a href="#padel">Leer más</a> <!-- Botón de redirección -->
+            <a href="#padel">Leer más</a>
         </div>
     </div>
 </div>
@@ -122,7 +107,7 @@
 <footer class="pieDePagina">
     <div class="pieDePagina-contenido">
         <p>&copy; LaEsquinaMultiespacio. Todos los derechos reservados.</p>
-        <p><a href="https://linktr.ee/LaEsquinaMULTIESPACIO">Redes</a> | <a href="contacto.html">Contacto</a></p>
+        <p class="fuente"><a href="https://linktr.ee/LaEsquinaMULTIESPACIO">Redes</a> | <a href="contacto.html">Contacto</a></p>
     </div>
 </footer>
 
