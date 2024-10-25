@@ -360,22 +360,22 @@ button:hover {
 }
 /*PIE DE PAGINA*/
 
-footer {
+.pieDePagina {
   background-color: #333; /* Color de fondo oscuro */
   color: #fff;            /* Texto en blanco */
-  padding: 20px;          /* Espaciado interno */
+  padding: 45px;          /* Espaciado interno */
   text-align: center;     /* Centrar texto */
-  position: relative;     /* Para garantizar que el pie de página esté al final */
-  bottom: 0;
   width: 100%;            /* Ocupar todo el ancho */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  position: relative;     /* Posición relativa para estar al final del contenido */
 }
 
-.footer-content a {
+.pieDePagina-contenido a {
   color: #00aced;         /* Color de los enlaces */
   text-decoration: none;  /* Sin subrayado */
   margin: 0 10px;         /* Espacio entre los enlaces */
 }
 
-.footer-content a:hover {
+.pieDePagina-contenido a:hover {
   text-decoration: underline; /* Subrayar al pasar el ratón */
 }

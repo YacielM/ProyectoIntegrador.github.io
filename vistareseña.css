@@ -1,10 +1,11 @@
-/*Encabezado*/
+/* Encabezado */
 :root {
     --main-color: #00f521;
     --black: #13131a;
     --bg: #191919;
     --white: #fff;
-  }
+}
+
 header {
     background: black;
     display: flex;
@@ -22,24 +23,27 @@ header {
     border: none;
     outline: none;
     transition: 0.5s;
-  }
-  .header .logo {
+}
+
+.header .logo {
     width: 60px;
     height: 60px;
-  }
-  .header .logo img {
+}
+
+.header .logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .header .navbar {
+}
+
+.header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    
-  }
-  .header .navbar .menu-item a {
+}
+
+.header .navbar .menu-item a {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
@@ -47,15 +51,20 @@ header {
     text-transform: uppercase;
     position: relative;
     padding: 1.1rem 0;
-  }
-  .header .navbar .menu-item a:hover {
-    color: var(--main-color);
-  }
-  /*Fin Encabezado*/
-body{
-    background-color: #181717;
 }
-.titulo{
+
+.header .navbar .menu-item a:hover {
+    color: var(--main-color);
+}
+
+/* Fin Encabezado */
+body {
+    background-color: #181717;
+    margin: 0;
+    padding-top: 70px; /* Asegura que el contenido no quede detrás del encabezado fijo */
+}
+
+.titulo {
     color: #ffffff;
 }
 
@@ -74,19 +83,16 @@ input.error {
 }
 
 form {
-    
     background-color: #000000;
     padding: 20px;
     border: 5px solid var(--main-color);
     border-radius: 15px;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 60px auto; /* Añadido margen superior para espaciar el formulario del contenido anterior */
     font-family: Arial, sans-serif;
-    position: relative; /* Añadido */
-    top: 25px; /* Ajusta este valor según sea necesario */
     box-shadow: 0 0 20px rgba(255, 236, 236, 0.5);
+    
 }
-
 
 label {
     color: #ffffff;
@@ -109,8 +115,6 @@ select {
     border-radius: 10px;
 }
 
-
-
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
@@ -124,7 +128,7 @@ button {
     background-color: var(--main-color);
     color: white;
     padding: 10px 20px;
-    border: black;
+    border: none; /* Cambiado para eliminar el borde negro */
     border-radius: 15px;
     cursor: pointer;
     width: 100%;
@@ -153,7 +157,8 @@ button:hover {
     font-size: 16px;
     color: var(--white);
     text-align: left;
-    border: 2px solid white; 
+    border: 2px solid white;
+    word-wrap: break-word;
 }
 
 select {
@@ -165,47 +170,44 @@ select option {
     background-color: #000000;
     color: #ffffff;
 }
-textarea {
-    
-   
-    width: 100%;    /* Ocupa todo el ancho disponible */
-        height: 150px;  /* Ajusta la altura */
-        padding: 10px;  /* Espacio interior para el texto */
-        border: 2px solid var(--main-color); /* Borde verde brillante */
-        background-color: #000000; /* Fondo negro */
-        color: #ffffff; /* Texto blanco */
-        border-radius: 10px; /* Bordes suavemente redondeados */
-        box-sizing: border-box; /* Para que padding no afecte el tamaño del contenedor */
-        resize: none;   /* Evita que el usuario cambie el tamaño manualmente */
-        font-size: 16px; /* Tamaño del texto cómodo */
-    }
-    
-    textarea:focus {
-        border-color: var(--main-color);
-        outline: none;
-    }
-    /*PIE DE PAGINA*/
 
-footer {
+textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 150px; /* Ajusta la altura */
+    padding: 10px; /* Espacio interior para el texto */
+    border: 2px solid var(--main-color); /* Borde verde brillante */
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 10px; /* Bordes suavemente redondeados */
+    box-sizing: border-box; /* Para que padding no afecte el tamaño del contenedor */
+    resize: none; /* Evita que el usuario cambie el tamaño manualmente */
+    font-size: 16px; /* Tamaño del texto cómodo */
+}
+
+textarea:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+
+/*PIE DE PAGINA*/
+.pieDePagina {
     background-color: #333; /* Color de fondo oscuro */
     color: #fff;            /* Texto en blanco */
-    padding: 10px;          /* Espaciado interno */
+    padding: 20px;          /* Espaciado interno */
     text-align: center;     /* Centrar texto */
-    position: relative;     /* Para garantizar que el pie de página esté al final */
-    bottom: 0;
     width: 100%;            /* Ocupar todo el ancho */
-  }
-  
-  .footer-content a {
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    position: relative;     /* Posición relativa para estar al final del contenido */
+}
+
+.pieDePagina-contenido a {
     color: #00aced;         /* Color de los enlaces */
     text-decoration: none;  /* Sin subrayado */
     margin: 0 10px;         /* Espacio entre los enlaces */
-  }
-  
-  .footer-content a:hover {
-    text-decoration: underline; /* Subrayar al pasar el ratón */
-  }
-.pieDePaginainicial {
+}
 
-    padding: 1px; 
-  }
+.pieDePagina-contenido a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+
