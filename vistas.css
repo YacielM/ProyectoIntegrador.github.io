@@ -334,30 +334,52 @@ button:hover {
 button:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Cambia el color del botón al pasar el cursor */
 }
+/* DESCRIPCIÓN DE SERVICIOS */
+.Descripcion {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .Descripcion .titulo1 {
   text-align: center;
-  margin-bottom: 100px
-}
-.Descripcion h1 {
-  font-size: 2rem;
-  text-align: left;
-  line-height: 3rem;
+  margin-bottom: 50px;
   color: var(--white);
+  font-size: 2.5rem;
   text-shadow: 2px 2px 0 #000000, -1px -1px 0 #000000, 2px -1px 0 #000000, -1px 2px 0 #000000;
-  margin-bottom: 20px;
-  background-color: var(--white);
+}
 
+.servicio-card {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.Descripcion p {
-  font-size: 1.2rem;
-  padding: 0.5rem 0;
-  line-height: 1.3;
-  text-align: left;
-  color: #fff;
-  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-  margin-bottom: 60px
-  
+
+.servicio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(255, 236, 236, 0.5);
 }
+
+.servicio-card h1 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+.servicio-card p {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 0 #000000;
+}
+
 /*PIE DE PAGINA*/
 
 .pieDePagina {
