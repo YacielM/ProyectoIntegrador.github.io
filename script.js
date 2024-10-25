@@ -14,9 +14,9 @@ setInterval(changeImage, 3000);
 //carrusel de imagenes con URL 
 
 const carruselImagenes = [
-    ["Imagenes/posible principal o servicio 2.jpeg", "Imagenes/posible principal o servicio 6.jpeg", "Imagenes/principal terreno 2.jpeg"], // Carrusel 1
-    ["Imagenes/futbol 2.jpeg", "Imagenes/futbol.jpeg", "Imagenes/posible principal o servicio 3.jpeg"], // Carrusel 2
-    ["Imagenes/posible principal o servicio 5.jpeg", "Imagenes/posible principal o servicio 4 .jpeg", "Imagenes/posible principal o servicio.jpeg"]  // Carrusel 3
+    ["Imagenes/Eventos/IMG_20231109_192143647.jpg", "Imagenes/Eventos/principal terreno 2.jpeg", "Imagenes/Eventos/WhatsApp Image 2023-10-07 at 15.50.51.jpeg"], // Carrusel 1
+    ["Imagenes/CUMPLEAÑOS INFANTIL/posible principal o servicio 2.jpeg", "Imagenes/CUMPLEAÑOS INFANTIL/posible principal o servicio 3.jpeg", "Imagenes/CUMPLEAÑOS INFANTIL/posible principal o servicio.jpeg"], // Carrusel 2
+    ["Imagenes/PADEL/principal3.jpeg", "Imagenes/PADEL/DISEÑO TOMOLASTA DE AGENDA.jpeg", "Imagenes/PADEL/WhatsApp Image 2023-10-13 at 19.55.07.jpeg"]  // Carrusel 3
 ];
 
 // Índices actuales para cada carrusel
