@@ -19,18 +19,21 @@
         </ul>
     </header>
 
-    <main>
-        <form id="Reseñasform" novalidate>
-            <h2 class="titulo">Cómo fue tu experiencia? Deja tu reseña</h2>
-            <label for="email">Correo electrónico:</label>
+    
+<form id="Reseñasform" novalidate>
+    <h2 class="titulo">Cómo fue tu experiencia? Deja tu reseña</h2>
+        <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email">
             <div class="error-message" id="errorEmail"></div>
-            <label for="nombre">Nombre y Apellido:</label>
+
+        <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre" name="nombre" maxlength="50" required>
             <div class="error-message" id="errorNombre"></div>
-            <label for="opinion" class="opinion">Deja tu opinión:</label>
+
+        <label for="opinion" class="opinion">Deja tu opinión:</label>
             <textarea id="opinion" name="opinion" maxlength="300" required></textarea>
-            <label for="experiencia">Cómo calificas tu experiencia?:</label>
+
+        <label for="experiencia">Cómo calificas tu experiencia?:</label>
             <select id="experiencia" name="experiencia" required>
                 <option value="">--Seleccionar--</option>
                 <option value="Muy Bueno">La mejor experiencia de mi vida</option>
@@ -47,7 +50,7 @@
             <h3>Últimos datos registrados:</h3>
             <p id="feedbackDatos"></p>
         </section>
-    </main>
+   
 
     <footer class="pieDePagina">
         <div class="pieDePagina-contenido">
